@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <!-- Menu bar -->
+        <div class="menu-bar">
+        <img  class="logo" src="/logo.png" alt="logo">
+        <h2 id="heading"> Task Manager</h2>
+        <div class="menu">
+            <ul>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </div>
+        </div>
+        
+        
+<!-- toolbox - container  -->
+          
+            <div class="toolbox-cont" id="task">
+                <div class="action-btn-cont">
+                    <div class="add-btn"> <i class="fa-solid fa-circle-plus"></i></div>
+                    <div class="remove-btn"> <i class="fa-solid fa-trash"></i></div>
+                </div>
+            
+                <div class="toolbox-priority-cont">
+                    <div class="color lightpink"></div>
+                    <div class="color lightblue"></div>
+                    <div class="color lightgreen"></div>
+                    <div class="color black"></div>
+                </div>
+                <div class="i-button" onmouseover="showDropdown()">i</div>
+                <div class="dropdown" id="dropdown">
+                  <ul>
+                    <li>Higher Priority</li> <div class="lightpink priority-color"></div>
+                    <li>Medium Priority</li><div class="lightblue priority-color"></div>
+                    <li>Low Priority</li><div class="lightgreen priority-color"></div>
+                    <li>Lowest Priority</li><div class="black priority-color border"></div>
+                  </ul>
+                </div>
+            </div>
+
+
+            <!-- main- container  -->
+
+
+            <div class="main-cont">
+
+            </div>
+
+            <div class="modal-cont">
+                <textarea spellcheck="false" class="text-area-cont"
+                    placeholder="Please Enter your Task Here"> </textarea>
+
+                <div class="priority-color-cont">
+                    <div class="lightpink priority-color"></div>
+                    <div class="lightblue priority-color"></div>
+                    <div class="lightgreen priority-color"></div>
+                    <div class="black priority-color border"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/a21d30c3ec.js" crossorigin="anonymous"></script>
+        <script defer src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+        <script src="/script.js"></script>
+
+    </body>
+
+</html>

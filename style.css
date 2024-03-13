@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #a5b1c2;
+}
+.menu-bar {
+  background-color: #A8CFFC;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menu ul li a:hover {
+  background-color: #ddd;
+}
+
+#logout {
+  background-color: #222F50;
+  color: white;
+}
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.toolbox-cont .i-button {
+  width: 30px;
+  height: 30px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown ul li:hover {
+  background-color: #f0f0f0;
+}
+
+.toolbox-cont {
+  margin-top: 0px;
+  height: 4.5rem;
+  background-color: #485C7B;
+  display: flex;
+  align-items: center;
+}
+
+.toolbox-cont>* {
+  margin-left: 4rem;
+  border-radius: 2px;
+
+}
+.toolbox-priority-cont {
+  height: 3rem;
+  width: 14rem;
+  background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.action-btn-cont {
+  height: 3rem;
+  width: 6rem;
+  background-color: rgb(102, 231, 236);
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-btn-cont>* {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: 2rem;
+
+}
+
+.color {
+  height: 2rem;
+  width: 2.5rem;
+  border-radius: 2px;
+}
+
+.lightpink {
+  background-color: lightpink;
+}
+
+.lightblue {
+  background-color: violet;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+}
+
+.black {
+  background-color: orange
+}
+
+
+.action-btn-cont>*:hover {
+
+  background-color: rgb(87, 239, 36);
+}
+/* main container css  */
+
+.modal-cont {
+  height: 50vh;
+  width: 45vw;
+  background-color: lightblue;
+  position: absolute;
+  top: calc((100vh - 50vh)/2);
+  left: calc((100vw - 50vw)/2);
+  display: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.text-area-cont {
+  height: 100%;
+  width: 75%;
+  background-color: rgb(237, 230, 220);
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 2rem;
+  font-size: 1.7rem;
+}
+
+.priority-color-cont {
+  height: 100%;
+  width: 25%;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+
+.priority-color {
+  height: 3rem;
+  width: 55%;
+
+}
+
+.border {
+  border: 5px solid rgb(102, 231, 236);
+
+}
+
+/* .................... */
+
+.ticket-cont {
+  height: 13rem;
+  width: 16rem;
+  background-color: aliceblue;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.ticket-color {
+  height: 1rem;
+}
+
+.ticket-id {
+
+  height: 2rem;
+  padding: 0.4rem;
+
+}
+
+.task-area {
+  height: calc(100% - 1rem - 2rem - 2rem);
+  padding: 0.4rem;
+  outline: none;
+  font-size: 1.3rem;
+  resize: none;
+
+}
+
+.main-cont {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.ticket-lock {
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  color: #a5b1c2;
+
+}
+
+.ticket-lock:hover {
+  color: black;
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .modal-cont {
+    width: 60vw;
+    left: calc((100vw - 60vw) / 2);
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .modal-cont {
+    width: 75vw;
+    height: 55vh;
+    top: calc((100vh - 55vh) / 2);
+    left: calc((100vw - 75vw) / 2);
+    flex-direction: column;
+  }
+
+  .textarea-cont {
+    width: 100%;
+    height: 75%;
+  }
+
+  .priority-color-cont {
+    flex-direction: row;
+    width: 100%;
+    height: 25%;
+  }
+
+  .priority-color {
+    width: 17%;
+  }
+
+  .toolbox-cont>* {
+    margin-left: 2rem;
+    border-radius: 2px;
+  }
+}
